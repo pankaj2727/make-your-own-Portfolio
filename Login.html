@@ -1,78 +1,11 @@
 <!DOCTYPE html>
 <HTML lang="en">
-    <head>
-         <meta charset="utf-8">
-         <title>Login</title>
 
-         <style>
-             body{
-                 background-image: url("loginimage2.jpg");
-                 background-repeat:no-repeat;
-                 background-size:cover;
-             }
-
-            .Home{
-                float:right;
-                margin-top: -12%;
-                border-radius: 20px;
-                border: 2px solid  green;
-              
-                padding: 14px 40px;
-            }
-
-            .Home:hover{
-                  background-color: white;
-                  border: 3px solid green;
-              }
-
-
-             .form{
-                
-                 margin-left:40% ;
-                 margin-top:12%;
-                 height: 390px;
-                 width: 300px;
-                 border: 1px solid yellow;
-                 border-radius: 20px;
-             }
-             
-
-             .email {
-                 padding:20px;
-                 margin-top:55px;
-                 margin-left: 25px;
-                 border-radius: 15px;
-             }
-
-             .password{
-                padding:20px; 
-                margin-top:55px;
-                margin-left: 25px;
-                border-radius: 15px;
-             }
-
-             
-              .submit{
-                text-align:"center";
-                padding: 14px 50px;
-                margin-top:55px;
-                margin-left: 72px;
-                border: 2px solid  green;
-                border-radius: 15px;
-              }
-
-              .submit:hover{
-                  background-color: white;
-                  border: 3px solid green;
-              }
-             
-       
-                 
-        </style>
-        
-        
-        <script>
-         
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script>
         function validate(){
             var email=document.Loginform.email.value;
             var password=document.Loginform.password.value;
@@ -84,31 +17,20 @@
 
         }
 
-        </script>   
-       
-    </head>
-    
-    <body style="background-color:black"> 
+        </script>
+</head>
 
+<body style="background-color:black">
     <div class="Homebutton">
- 
         <a href="index.html" alt="Homebutton"><button class="Home">Home</button></a>
-
     </div>
-
-
-        <div class="form">
-       
-        <form action="" method="POST"  name="Loginform"  onsubmit=" return validate()">
-        
-        <input class="email" type="email" placeholder="Enter email" name="emial"><br>
-        <input class="password" type="password" placeholder="Enter password" name="password"><br>
-        <input class="submit" type="submit" value="Submit">
-
+    <div class="form">
+        <form action="" method="POST" name="Loginform" onsubmit=" return validate()">
+            <input class="email" type="email" placeholder="Enter email" name="emial"><br>
+            <input class="password" type="password" placeholder="Enter password" name="password"><br>
+            <input class="submit" type="submit" value="Submit">
         </form>
-
     </div>
-    
+</body>
 
-    </body>
 </HTML>

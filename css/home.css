@@ -2,43 +2,43 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
-color:#c0c0c0;
+body {
+    background-color: #000;
+    color: #c0c0c0;
+    font-family: Biotif-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 a:link {
     color: white;
     text-decoration: none;
-    
-  }
-  
-  a:visited {
+
+}
+
+a:visited {
     color: white;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: white;
     text-decoration: underline;
     text-decoration-color: #08a0e9;
-  }
-  
-  a:active {
+}
+
+a:active {
     color: white;
     text-decoration: underline;
-    text-decoration-color:#08a0e9;
-    
-  }
-  
-nav{
-    width:100%;
-    height:70px;
-    position: sticky;
-    margin-top:0%;
+    text-decoration-color: #08a0e9;
+}
+
+nav {
+    background-color: #292929;
     border: 2px solid green;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    margin-top: 0;
     border-radius: 10px;
-    
     z-index: 2;
 }
 
@@ -46,97 +46,84 @@ nav ul {
     margin: 27px 0;
 }
 
-nav li{
-     padding: 40px;
-    display:inline;
+nav li {
+    display: inline;
+    padding: 40px;
 }
 
-.login{
+.login {
     padding-left: 450px;
 }
 
-.header{
-    margin-left:5%;
-    
+.header {
+    margin-left: 5%;
+
     width: 50%;
-    height:80%;
-   
+    height: 80%;
+
     display: inline-block;
-    
- }
- .header h1{
-    font-family: "Sofia", sans-serif;
-     margin-top: 60px;
-    
- }
 
- .header li{
-     margin-top:60px;
-     
-    
- }
-
- .button{
-    margin-top:60px;
-    margin-left: 40px;
-    border: 2px solid  green;
-    display: inline-block;
-    padding: 12px 68px;
-   
- }
-
-.menimg{
-   position:absolute;
-   top: 190px;
-   right: 0;
-   height: 70%;
-   width:40%;
-  
 }
 
-article h1{
+.header h1 {
+    font-family: "Sofia", sans-serif;
+    margin-top: 60px;
+
+}
+
+.header li {
+    margin-top: 60px;
+}
+
+.button {
+    border: 2px solid green;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 60px;
+    padding: 12px 68px;
+}
+
+.menimg {
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 190px;
+    width: 40%;
+
+}
+
+article h1 {
     font-family: "Sofia", sans-serif;
     font-size: 250%;
-  
 }
 
 
-.features{
-    
-    margin-top:10px;
-    margin-left: 30px;
-    margin-right: 30px;
-   
+.features {
+    margin: 10px 30px 0 30px;
 }
-.featuresimg{
-    text-align: right;
+
+.featuresimg {
     padding-top: 10%;
-    padding-right:0 ;
+    padding-right: 0;
+    text-align: right;
 }
 
 
-.Sectiontable{
-    width:90%;
-    
+.Sectiontable {
     margin-left: 30px;
- 
-   
-    
+    width: 90%;
 }
 
-.Sectiontablelist{
-    padding-top:10%;
+.Sectiontablelist {
+    padding-top: 10%;
 }
 
-.contact{
-    width:100%;
-    height:190px;  
-    
-
-    margin-bottom: 0%;
-
-    
+.contact {
+    height: 190px;
+    margin-bottom: 0;
+    width: 100%;
 }
-.contactlist{
+
+.contactlist {
     padding-left: 530px;
 }
