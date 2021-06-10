@@ -22,7 +22,6 @@ a:visited {
 a:hover {
     color: white;
     text-decoration: underline;
-    text-decoration-color: #08a0e9;
 }
 
 a:active {
@@ -31,10 +30,13 @@ a:active {
     text-decoration-color: #08a0e9;
 }
 
+button:hover {
+    background-color: #a9a9e9;
+}
 nav {
     background-color: #292929;
     border: 2px solid green;
-    width: 100%;
+    width: 98%;
     height: 70px;
     position: fixed;
     margin-top: 0;
@@ -57,12 +59,9 @@ nav li {
 
 .header {
     margin-left: 5%;
-
     width: 50%;
     height: 80%;
-
     display: inline-block;
-
 }
 
 .header h1 {
@@ -95,6 +94,7 @@ nav li {
 article h1 {
     font-family: "Sofia", sans-serif;
     font-size: 250%;
+    margin-top: 200px;
 }
 
 
