@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+         <meta charset="utf-8">
+         <title>Sign up</title>
+
+         <style>
+             body{
+                 background-image: url("loginimage2.jpg");
+                 background-repeat:no-repeat;
+                 background-size:cover;
+             }
+
+            .Login{
+                float:right;
+                margin-top: -8%;
+                border-radius: 20px;
+                border: 2px solid  green;
+              
+                padding: 14px 40px;
+            }
+
+            .Login:hover{
+                  background-color: white;
+                  border: 3px solid green;
+              }
+
+
+             .form{
+                
+                 margin-left:40% ;
+                 margin-top:8%;
+                 height: 460px;
+                 width: 300px;
+                 border: 1px solid yellow;
+                 border-radius: 20px;
+             }
+             .Name{
+                 padding:20px;
+                 margin-top:20px;
+                 margin-left: 25px;
+                 border-radius: 15px;
+             }
+
+             .email {
+                 padding:20px;
+                 margin-top:20px;
+                 margin-left: 25px;
+                 border-radius: 15px;
+             }
+
+             .password{
+                padding:20px; 
+                margin-top:20px;
+                margin-left: 25px;
+                border-radius: 15px;
+             }
+
+             .recheckpassword{
+                padding:20px; 
+                margin-top:20px;
+                margin-left: 25px;
+                border-radius: 15px;
+             }
+              .signup{
+                text-align:"center";
+                padding: 14px 50px;
+                margin-top:25px;
+                margin-left: 76px;
+                border: 2px solid  green;
+                border-radius: 15px;
+              }
+
+              .signup:hover{
+                  background-color: white;
+                  border: 3px solid green;
+              }
+             
+         </style>
+
+         <script>
+              var name=document.Loginform.name.value;
+              var p1=document.Loginform.password.value;
+              var p2=document.Loginform.recheckpassword.value;
+             
+              function validate(){
+                 
+                 if(name=="" || name==null){
+                    alert("Enter Name");
+                     return false;
+                 }
+                 else if(p1.length<6){
+                    alert("Password must be at least 6 characters long.");  
+                    return false;  
+                 }
+                 else if(p1!=p2){
+                    alert("Password Not Match");
+                     return false;
+                 }
+                
+            }
+
+            function valstrength(){
+                var msg;
+                if(document.Loginform.password.value.length<6)
+                msg= String.fromCodePoint(128078);
+                else
+                msg= String.fromCodePoint(128170);
+
+                document.getElementById('mylocation').innerText=msg;
+                
+            }
+
+
+         </script>
+       
+    </head>
+    
+    <body style="background-color:black">
+
+    <div class="loginbutton">
+ 
+        <a href="Login.html" alt="loginbutton"><button class="Login">Log in</button></a>
+
+    </div>
+
+
+        <div class="form">
+       
+        <form action="" method="POST"  name="Loginform" onsubmit="return validate()">
+        <input class="Name" type="text" placeholder="Enter name"  name="name"><br>    
+        <input class="email" type="email" placeholder="Enter email" name="emial"><br>
+        <input class="password" type="password" placeholder="Enter password" name="password" onkeyup="valstrength()"><span id="mylocation"></span><br>
+        <input class="recheckpassword" type="password" placeholder="Enter again password" name="recheckpassword"><br>
+        <input class="signup" type="submit" value="Sign up">
+
+        </form>
+
+    </div>
+    
+
+    </body>
+</HTML>
